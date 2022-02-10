@@ -1,6 +1,6 @@
 const { createDOMPurify } = require('dompurify');
 
-export function markdownitDommpurify (windowObj = window) {
+module.exports = function markdownitDommpurify (windowObj = window) {
     windowObj = windowObj || window;
     const dompurify = createDOMPurify(windowObj);
 

@@ -2,7 +2,7 @@
   "name": "markdown-it-dompurify",
   "version": "1.0.2",
   "description": "",
-  "main": "dist/bundle.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "webpack --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode production"
@@ -18,7 +18,6 @@
   ],
   "files": [
     "src",
-    "dist",
     "LICENSE",
     "README.md"
   ],
@@ -30,9 +29,5 @@
   "homepage": "https://github.com/duncte123/markdown-it-dompurify#readme",
   "dependencies": {
     "dompurify": "^2.3.5"
-  },
-  "devDependencies": {
-    "webpack": "^5.68.0",
-    "webpack-cli": "^4.9.2"
   }
 }
