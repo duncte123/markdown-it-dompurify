@@ -23,9 +23,13 @@ const markdown = new MarkdownIt()
 ## Using with nuxt.js/next.js
 To use this plugin without a browser attached you can use [JSDOM](https://www.npmjs.com/package/jsdom) and inject that into the plugin like this
 ```js
+const MarkdownIt = require('markdown-it');
 const dompuriftyPlugin = require('markdown-it-dompurify');
 const { JSDOM } = require('jsdom');
 const window = new JSDOM('').window;
 
 const purify = dompuriftyPlugin(window);
+
+const markdown = new MarkdownIt()
+    .use(purify); // We've used the function to inject a custom dom
 ```
