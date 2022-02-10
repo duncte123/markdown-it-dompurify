@@ -13,7 +13,7 @@ With Yarn
 There are currently no options to configure, there are future plans that allow for passing options directly to dompurify
 ```js
 const MarkdownIt = require('markdown-it');
-const dompuriftyPlugin = require('markdown-it-dompurify');
+const { dompuriftyPlugin } = require('markdown-it-dompurify');
 
 const markdown = new MarkdownIt()
             .use(dompuriftyPlugin()); // we're returning a function here
@@ -24,7 +24,7 @@ const markdown = new MarkdownIt()
 To use this plugin without a browser attached you can use [JSDOM](https://www.npmjs.com/package/jsdom) and inject that into the plugin like this
 ```js
 const MarkdownIt = require('markdown-it');
-const dompuriftyPlugin = require('markdown-it-dompurify');
+const { dompuriftyPlugin } = require('markdown-it-dompurify');
 const { JSDOM } = require('jsdom');
 const window = new JSDOM('').window;
 
