@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/bundle.js",
   "scripts": {
+    "dev": "webpack --config webpack.config.js --mode development",
     "build": "webpack --config webpack.config.js --mode production"
   },
   "repository": {
@@ -16,6 +17,7 @@
     "dompurify"
   ],
   "files": [
+    "src",
     "dist",
     "LICENSE",
     "README.md"
