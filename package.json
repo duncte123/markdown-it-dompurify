@@ -1,12 +1,8 @@
 {
   "name": "markdown-it-dompurify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "src/index.js",
-  "scripts": {
-    "dev": "webpack --config webpack.config.js --mode development",
-    "build": "webpack --config webpack.config.js --mode production"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/duncte123/markdown-it-dompurify.git"
@@ -28,6 +24,7 @@
   },
   "homepage": "https://github.com/duncte123/markdown-it-dompurify#readme",
   "dependencies": {
-    "dompurify": "^2.3.5"
+    "dompurify": "^2.3.5",
+    "isomorphic-dompurify": "^0.18.0"
   }
 }
