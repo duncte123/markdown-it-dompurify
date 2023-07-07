@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/duncte123/markdown-it-dompurify#readme",
   "dependencies": {
-    "dompurify": "^2.3.5",
-    "isomorphic-dompurify": "^0.18.0"
+    "dompurify": "^3.0.4",
+    "isomorphic-dompurify": "^1.7.0"
   }
 }
