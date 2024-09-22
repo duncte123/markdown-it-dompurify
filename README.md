@@ -13,7 +13,7 @@ With Yarn
 There are currently no options to configure, there are future plans that allow for passing options directly to dompurify
 ```js
 const MarkdownIt = require('markdown-it');
-const { dompurifyPlugin } = require('markdown-it-dompurify');
+const dompurifyPlugin = require('markdown-it-dompurify');
 
 const markdown = new MarkdownIt()
             .use(dompurifyPlugin);
